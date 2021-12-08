@@ -1,14 +1,16 @@
 package code.ss.demo1.os;
 
 
+import java.util.Iterator;
+import java.util.LinkedList;
 
 public class Malloc {
 
-    LinkedArrayList<Node> linkedList;
+    LinkedList<Node> linkedList;
 
     public Malloc() {
 
-        linkedList = new LinkedArr<>();
+        linkedList = new LinkedList<>();
         Node node = new Node();
         node.addr = 0L;
         node.size = 1024 * 1024 * 1024; //
@@ -23,7 +25,6 @@ public class Malloc {
     }
 
     private long malloc(long size) {
-        linkedList.
         Iterator<Node> iterator = linkedList.iterator();
         Node target = new Node();
         if (size <= target.size) {
